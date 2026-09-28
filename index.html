@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VynceLabs · Intelligence, built in.</title>
+  <meta name="description" content="VynceLabs builds apps and tools that get smarter the more you use them. Meet Liquify, our first app.">
+  <link rel="canonical" href="https://vyncelabs.co.uk/">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VynceLabs">
+  <meta property="og:title" content="VynceLabs · Intelligence, built in.">
+  <meta property="og:description" content="VynceLabs builds apps and tools that get smarter the more you use them.">
+  <meta property="og:url" content="https://vyncelabs.co.uk/">
+
+  <link rel="icon" type="image/svg+xml" href="brand/logos/vyncelabs-app-icon.svg">
+
+  <!-- Apply a saved theme before first paint so there is no flash. -->
+  <script>
+    try {
+      var t = localStorage.getItem('vl-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="brand/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body class="text-body">
+  <a class="skip-link text-label" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="VynceLabs home">
+        <img class="wordmark logo-light" src="brand/logos/vyncelabs-wordmark-light.svg" alt="VynceLabs" width="144" height="30">
+        <img class="wordmark logo-dark" src="brand/logos/vyncelabs-wordmark-dark.svg" alt="VynceLabs" width="144" height="30">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list text-label">
+          <li><a href="#what-we-do">What we do</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-button menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+          <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <!-- The wrapper carries the smaller display style; on phones the headline inherits it. -->
+          <div class="text-display">
+            <h1 class="text-display-xl hero-title">Intelligence, built in.</h1>
+          </div>
+          <p class="text-body-lg lede">VynceLabs builds apps and tools that get smarter the more you use them.</p>
+          <div class="actions">
+            <a class="button button-primary text-label" href="https://liquify.vyncelabs.co.uk">Meet Liquify</a>
+            <a class="button button-secondary text-label" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero-visual node-grid node-grid-dark" aria-hidden="true">
+          <img class="hero-mark" src="brand/logos/vyncelabs-mark-dark.svg" alt="" width="64" height="64">
+          <span class="node node-a"></span>
+          <span class="node node-b"></span>
+          <span class="node node-spark"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section class="section" id="what-we-do" aria-labelledby="what-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="text-caption eyebrow">What we do</p>
+          <h2 class="text-display" id="what-title">AI where you already are</h2>
+          <p class="text-body-lg muted measure">We build intelligence into the things you use every day, so they fit around your routine instead of asking you to learn a new one.</p>
+        </header>
+
+        <ul class="card-grid" role="list">
+          <li class="card">
+            <span class="icon-tile">
+              <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+            </span>
+            <h3 class="text-heading">Mobile apps</h3>
+            <p class="muted">Everyday apps that learn your habits and help at the right moment. Liquify is the first.</p>
+          </li>
+          <li class="card">
+            <span class="icon-tile">
+              <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+            </span>
+            <h3 class="text-heading">Business tools</h3>
+            <p class="muted">Next, we're bringing the same thinking to the tools teams rely on: fewer repetitive steps, better timing.</p>
+          </li>
+          <li class="card">
+            <span class="icon-tile">
+              <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+            </span>
+            <h3 class="text-heading">Better with use</h3>
+            <p class="muted">Our products learn from how you use them, so they're more helpful in month three than on day one.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="text-caption eyebrow">Products</p>
+          <h2 class="text-display" id="products-title">What we're building</h2>
+        </header>
+
+        <div class="product-grid">
+          <article class="card product-card product-feature">
+            <div class="product-top">
+              <span class="icon-tile icon-tile-lg">
+                <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 10.6 5 12.5 5 15a7 7 0 0 0 7 7z"/></svg>
+              </span>
+              <span class="badge badge-spark text-caption">Our first app</span>
+            </div>
+            <h3 class="text-display">Liquify</h3>
+            <p class="text-label muted byline">by VynceLabs</p>
+            <p class="text-body-lg measure">Liquify learns when you usually forget to drink and nudges you before you do. Splash, its mascot, keeps you company along the way.</p>
+            <a class="text-link text-label" href="https://liquify.vyncelabs.co.uk">
+              Visit liquify.vyncelabs.co.uk
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </a>
+          </article>
+
+          <article class="card product-card product-next">
+            <span class="tag text-caption">In the works</span>
+            <h3 class="text-heading">Tools for businesses</h3>
+            <p class="muted">We're taking what we learn from Liquify into tools for teams. If you'd like an early look, tell us what slows your team down.</p>
+            <a class="text-link text-label" href="#contact">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <header class="section-head about-head">
+          <p class="text-caption eyebrow">About</p>
+          <h2 class="text-display" id="about-title">About VynceLabs</h2>
+          <p class="text-body-lg measure">VynceLabs is a studio that builds AI into everyday experiences. We start with mobile apps, then take what we learn into tools for businesses.</p>
+          <p class="muted measure">We think the best technology is the kind you barely notice. You shouldn't need to know how a model works to get something from it. You should just find that the app knows what you need a little sooner each week.</p>
+        </header>
+
+        <ul class="principles" role="list">
+          <li>
+            <h3 class="text-heading">Useful first</h3>
+            <p class="muted">We start from a real moment in someone's day, not from the technology.</p>
+          </li>
+          <li>
+            <h3 class="text-heading">Quietly clever</h3>
+            <p class="muted">The smart part shows up in what the product does, not in how loudly it says so.</p>
+          </li>
+          <li>
+            <h3 class="text-heading">Made to last</h3>
+            <p class="muted">Each product has its own name and personality, backed by one studio that looks after it.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card node-grid">
+          <div class="contact-copy">
+            <p class="text-caption eyebrow">Contact</p>
+            <h2 class="text-display" id="contact-title">Get in touch</h2>
+            <p class="text-body-lg muted measure">A question about Liquify, an idea for your business, or just saying hello: we'd like to hear from you.</p>
+            <div class="actions">
+              <a class="button button-primary text-label" href="mailto:hello@vyncelabs.co.uk">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Email us
+              </a>
+              <a class="text-link text-label" href="mailto:hello@vyncelabs.co.uk">hello@vyncelabs.co.uk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top" aria-label="VynceLabs home">
+        <img class="wordmark-sm logo-light" src="brand/logos/vyncelabs-wordmark-light.svg" alt="VynceLabs" width="120" height="25">
+        <img class="wordmark-sm logo-dark" src="brand/logos/vyncelabs-wordmark-dark.svg" alt="VynceLabs" width="120" height="25">
+      </a>
+      <ul class="footer-links text-label" role="list">
+        <li><a href="https://liquify.vyncelabs.co.uk">Liquify</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="text-caption muted">© <span data-year>2026</span> VynceLabs</p>
+    </div>
+  </footer>
+</body>
+</html>

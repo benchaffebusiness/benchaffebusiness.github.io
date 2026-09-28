@@ -1,0 +1,91 @@
+/* VynceLabs design tokens. Light by default; dark follows the OS unless data-theme="light" is set, or force it with data-theme="dark". */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=JetBrains+Mono:wght@400&display=swap');
+@font-face { font-family: 'Poppins'; src: url('./fonts/Poppins-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Poppins'; src: url('./fonts/Poppins-Medium.ttf') format('truetype'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Poppins'; src: url('./fonts/Poppins-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --font-display: Poppins, "DM Sans", system-ui, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --surface: #F4F6F3;
+  --surface-raised: #FFFFFF;
+  --line: #DDE1DC;
+  --border-strong: #7E8690;
+  --ink: #0F1216;
+  --ink-muted: #58606A;
+  --vynce: #09735A;
+  --vynce-soft: #DCF1E8;
+  --on-vynce: #FFFFFF;
+  --spark: #C6F432;
+  --on-spark: #0F1216;
+  --graphite: #0F1216;
+  --danger: #B42318;
+  --danger-soft: #FDE7E5;
+  --link: var(--vynce);
+  --shadow-sm: 0 1px 2px #0f121614;
+  --shadow-lg: 0 12px 32px -8px #0f121633;
+  --focus-ring: 0 0 0 2px #F4F6F3, 0 0 0 4px #09735A;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface: #0C0E11;
+    --surface-raised: #161A1F;
+    --line: #2A2F36;
+    --border-strong: #5E6670;
+    --ink: #EEF1F4;
+    --ink-muted: #9BA4AE;
+    --vynce: #3DD6A0;
+    --vynce-soft: #0F2C23;
+    --on-vynce: #0C0E11;
+    --spark: #C6F432;
+    --on-spark: #0F1216;
+    --graphite: #0F1216;
+    --danger: #FF8A7A;
+    --danger-soft: #3A1512;
+    --link: var(--vynce);
+    --shadow-sm: 0 1px 2px #00000099;
+    --shadow-lg: 0 12px 32px -8px #000000cc;
+    --focus-ring: 0 0 0 2px #0C0E11, 0 0 0 4px #3DD6A0;
+  }
+}
+:root[data-theme="dark"] {
+  --surface: #0C0E11;
+  --surface-raised: #161A1F;
+  --line: #2A2F36;
+  --border-strong: #5E6670;
+  --ink: #EEF1F4;
+  --ink-muted: #9BA4AE;
+  --vynce: #3DD6A0;
+  --vynce-soft: #0F2C23;
+  --on-vynce: #0C0E11;
+  --spark: #C6F432;
+  --on-spark: #0F1216;
+  --graphite: #0F1216;
+  --danger: #FF8A7A;
+  --danger-soft: #3A1512;
+  --link: var(--vynce);
+  --shadow-sm: 0 1px 2px #00000099;
+  --shadow-lg: 0 12px 32px -8px #000000cc;
+  --focus-ring: 0 0 0 2px #0C0E11, 0 0 0 4px #3DD6A0;
+}
+
+/* Type styles */
+.text-display-xl { font-family: var(--font-display); font-size: 56px; line-height: 60px; font-weight: 500; letter-spacing: -0.03em; }
+.text-display { font-family: var(--font-display); font-size: 36px; line-height: 44px; font-weight: 500; letter-spacing: -0.02em; }
+.text-heading { font-family: var(--font-display); font-size: 22px; line-height: 30px; font-weight: 500; letter-spacing: -0.01em; }
+.text-body-lg { font-family: var(--font-sans); font-size: 18px; line-height: 28px; font-weight: 400; }
+.text-body { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 400; }
+.text-label { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 500; }
+.text-caption { font-family: var(--font-sans); font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.04em; }
+.text-code { font-family: var(--font-mono); font-size: 14px; line-height: 20px; font-weight: 400; }
